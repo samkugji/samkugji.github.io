@@ -1,0 +1,307 @@
+---
+layout: default
+---
+<div class="wrapper">
+
+  <header class="page-header">
+
+    {% if site.resume_avatar == 'true' %}
+    <img src="images/avatar.jpg" alt="my photo" class="avatar" height="10%">
+    {% endif %}
+
+    <h1 class="header-name">{{ site.resume_name }}</h1>
+
+    <div class="title-bar">
+
+      <h2 class="header-title">{{ site.resume_title }}</h2>
+
+      {% include icon-links.html %}
+    </div>
+
+    <div class="executive-summary">
+      <p>I'm not just a typical job-seeker.</p>
+        <p> I'm a job-seeker who is eager to create valuable business through data analysis.
+        I majored in Media Engineering at Ajou University. I can use software to extract variable information from web or raw data. After graduation, I was able to gain about 3 years experience using data analysis in IT companies to make practical decisions. These experiences taught me how to apply analysis in a team for marketing.
+        From 2010 to 2013, I was responsible as a project manager for the administration of an online game. This project allowed me to develop and refine my problem-solving skills to improve the effectiveness of outcomes. Plus, the game industry involves the the cooperation of multiple fields, so I am experienced in liaising with technology teams to accomplish goals.
+        Now I'm looking to join a team project or to assume an analytic role.
+      </p>
+    </div>
+
+    {% if site.resume_looking_for_work == 'yes' %}
+    <a href="mailto:{{ site.resume_contact_email }}" class="contact-button">Contact me</a>
+    {% elsif site.resume_looking_for_work == 'no' %}
+    <a class="contact-button not-looking">I'm not looking for work right now.</a>
+    {% else %}
+    {% endif %}
+
+  </header>
+
+  {% if site.resume_section_skills %}
+  <!-- begin Skills -->
+  <section class="content-section">
+
+      <header class="section-header">
+          <h2>SKILLS</h2>
+      </header>
+      <div class="columns">
+        <div class="resume-item table-column">
+            <h4 class="resume-item-details"><i class="fa"></i>Data Science</h4>
+            <ul class="resume-item-list">
+                <li>Machine Learning</li>
+                  <ul class="resume-item-list">
+                      <li>Python</li>
+                  </ul>
+                <li>Deep Learning</li>
+                  <ul class="resume-item-list">
+                      <li>TensorFlow</li>
+                  </ul>
+            </ul>
+        </div>
+
+          <div class="resume-item table-column">
+              <h4 class="resume-item-details"><i class="fa"></i>FrontEnd</h4>
+              <ul class="resume-item-list">
+                  <li>HTML</li>
+                  <li>
+                      CSS
+                      <ul class="resume-item-list">
+                          <li>Bootstrap</li>
+                      </ul>
+                  </li>
+                  <li>
+                      JavaScript
+                      <ul class="resume-item-list">
+                          <li>JQuery</li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="resume-item table-column">
+              <h4 class="resume-item-details"><i class="fa"></i>BackEnd</h4>
+              <ul class="resume-item-list">
+                  <li>Python</li>
+                    <ul class="resume-item-list">
+                        <li>Django FrameWork</li>
+                    </ul>
+                  <li>Java</li>
+              </ul>
+          </div>
+
+          <div class="resume-item table-column">
+              <h4 class="resume-item-details"><i class="fa"></i>Database</h4>
+              <ul class="resume-item-list">
+                  <li>PostgreSQL</li>
+                  <li>MySQL</li>
+                  <li>MS-SQL</li>
+                  <li>Oracle-SQL</li>
+              </ul>
+          </div>
+
+          <div class="resume-item table-column">
+              <h4 class="resume-item-details"><i class="fa"></i>Others</h4>
+              <ul class="resume-item-list">
+                  <li>git/git-flow</li>
+                  <li>github</li>
+                  <li>AWS</li>
+                  <li>SVN</li>
+                  <li>slack</li>
+              </ul>
+          </div>
+
+          <div class="resume-item table-column">
+            <h4 class="resume-item-details"><i class="fa fa-globe"></i>Languages</h4>
+            <ul class="resume-item-list">
+              <li>Korean (Native)</li>
+              <li>English<br/>(working proficiency)</li>
+              <li>Japanese<br/>(Elementary)</li>
+            </ul>
+          </div>
+
+      </div>
+
+  </section>
+  <!-- end Skills -->
+  {% endif %}
+
+  {% if site.resume_section_experience %}
+  <!-- begin Experience -->
+  <section class="content-section">
+
+    <header class="section-header">
+      <h2>EXPERIENCE</h2>
+    </header>
+
+    <div class="resume-item">
+      <h3 class="resume-item-title">Korea Airports Corporation</h3>
+
+        <h4 class="resume-item-details">Business &amp; Administration Staff
+        <div style="text-align:right">
+        <span class="resume-item-place">&nbsp;&nbsp;Seoul(Korea)</span>
+        &bull; Dec. 2013 &mdash; Nov. 2014
+        </div>
+
+      </h4>
+      <ul class="resume-item-list">
+        <li>Researched customer satisfaction index and crafted appropriate response strategies</li>
+        <li>Managed complaints of outsourcing companies' employees</li>
+        <li>Marketed airport service with published magazines</li>
+      </ul>
+    </div>
+
+    <div class="resume-item">
+      <h3 class="resume-item-title">Nexon Co. Lt</h3>
+        <h4 class="resume-item-details">Game Designer &amp; Project Manager
+        <div style="text-align:right">
+        <span class="resume-item-place">Seoul(Korea)</span>
+        &bull; Sep. 2010 &mdash; Nov. 2012
+      </div>
+      </h4>
+      <ul class="resume-item-list">
+        <li>Developed and operated Massive Multiplayer Online Game “Mabinogi” with 5,000,000+ users</li>
+        <li>Analyzed weekly user game play behavior to apply marketing strategy to increase sales</li>
+        <li>Crafted solutions to elevate online game service qualit</li>
+      </ul>
+
+        <div class="table-column">
+        <iframe align="center" src="//www.slideshare.net/slideshow/embed_code/key/ujtDw8ayEMHNKR" width="595" height="242" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+    </div>
+
+
+    </div>
+
+  </section>
+  <!-- end Experience -->
+  {% endif %}
+
+  {% if site.resume_section_projects %}
+  <!-- begin Projects -->
+  <section class="content-section">
+
+    <header class="section-header">
+      <h2>PROJECTS</h2>
+    </header>
+
+    <div class="resume-item">
+      <h3 class="resume-item-title">Insurance fraud detection<a href="https://github.com/samkugji/fraudulent_insured_person"><i class="fa fa-github"></i></a></h3>
+      <h4 class="resume-item-details">Classification(Machine Learning) with Python &bull; Aug. 2016 &mdash; Present</h4>
+      <ul class="resume-item-list">
+        <li>Prediction fraud of insurance from massive customer data(>20,000)</li>
+        <li>Result: accuracy = 0.94144, f1-score = 0.58824</li>
+      </ul>
+    </div>
+
+    <div class="resume-item">
+      <h3 class="resume-item-title">Journal in English<a href="https://github.com/jupiny/EnglishDiary"><i class="fa fa-github"></i></a></h3>
+      <h4><a href="https://engdiary.dsds101.info/">Go to Service</a></h4>
+      <h4 class="resume-item-details">Web application written in Django Framework(Python) &bull; Aug, 2015</h4>
+      <ul class="resume-item-list">
+        <li>A main service designer with one web developer(team members are 2)</li>
+        <li>Contribute to Back-end development and Front-end(JavaScript, HTML, CSS)</li>
+        <li>To prepare data Analysis(PostgreSQL, Google Analysis)</li>
+        <li>DevOps with Git, github, Slack, AWS(EC2)</li>
+      </ul>
+      <div class="columns well">
+        <div class="table-column">
+          <a href="images/portfolio/English/1.png">
+            <img class="img-thumbnail" src="images/portfolio/English/1.png" data-large-src="images/portfolio/English/1.png" alt="Eng1" />
+          </a>
+        </div>
+        <div class="table-column">
+          <a href="images/portfolio/English/2.png">
+            <img class="img-thumbnail" src="images/portfolio/English/2.png" data-large-src="images/portfolio/English/2.png" alt="Eng2" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- end Projects -->
+  {% endif %}
+
+  {% if site.resume_section_education %}
+  <!-- begin Education -->
+  <section class="content-section">
+
+    <header class="section-header">
+      <h2>EDUCATION</h2>
+    </header>
+
+    <div class="resume-item">
+      <h3 class="resume-item-title">Fast Campus</h3>
+      <h4 class="resume-item-details">Data Scientist course - Web Programming course
+        <span class="resume-item-place">Seoul, Korea</span>
+        &bull; Dec. 2015 &mdash; Sep. 2016
+      </h4>
+    </div>
+
+    <div class="resume-item">
+      <h3 class="resume-item-title">Ajou University</h3>
+      <h4 class="resume-item-details">BE in Media Science,
+        <span class="resume-item-place">Gyeonggi Province, Korea</span>
+        &bull; Mar. 2004 &mdash; Feb. 2010
+      </h4>
+    </div>
+
+
+  </section>
+  <!-- end Education -->
+  {% endif %}
+
+  {% if site.resume_section_blog %}
+  <!-- begin Blog -->
+  <section class="content-section">
+    <header class="section-header">
+      <h2>Latest articles</h2>
+    </header>
+    {% for post in site.posts limit: 5 %}
+      <div class="resume-item">
+        <img src= "{{post.cover}}" class="resume-item-picture" alt="{{post.title}}" />
+        <h3 class="resume-item-title"><a href="{{post.url}}">{{post.title}}</a></h3>
+        <h4 class="resume-item-details">
+          <span class="resume-item-place">on {{post.date | date: "%B %d, %Y"}}</span>
+        </h4>
+      </div>
+    {% endfor %}
+  </section>
+  <!-- end Blog -->
+  {% endif %}
+
+  {% if site.resume_section_recognition %}
+  <!-- begin Recognition -->
+  <section class="content-section">
+    <header class="section-header">
+      <h2>Recognition</h2>
+    </header>
+  </section>
+  <!-- end Recognition -->
+  {% endif %}
+
+  {% if site.resume_section_associations %}
+  <!-- begin Associations -->
+  <section class="content-section">
+    <header class="section-header">
+      <h2>Associations</h2>
+    </header>
+  </section>
+  <!-- end Associations -->
+  {% endif %}
+
+  {% if site.resume_section_links %}
+  <!-- begin Links -->
+  <section class="content-section">
+    <header class="section-header">
+      <h2>Additional Links</h2>
+    </header>
+  </section>
+  <!-- end Links -->
+  {% endif %}
+
+  <footer class="page-footer">
+    <p class="footer-line">Fork me on <a href="https://github.com/gautierdelorme/gautierdelorme.github.io">GitHub</a>.</p>
+  </footer>
+
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.h5-lightbox.min.js"></script>
+<script type="text/javascript" src="js/resume.js"></script>
