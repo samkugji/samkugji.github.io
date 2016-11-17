@@ -1,8 +1,9 @@
-# [samkugji.github.io](samkugji.github.io)
+# [samkugji.github.io](https://samkugji.github.io/)
 
 This is my web blog with resume.
 I made mine throgh below.
 
+========================================================================================================================
 
 *A Jekyll + GitHub Pages powered resume based on Joel Glovier's work.*
 
